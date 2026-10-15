@@ -109,7 +109,7 @@ See [ROADMAP.md](docs/ROADMAP.md) for detailed deliverables, acceptance criteria
 
 ## 8. Development Setup
 
-> **Note**: Development setup is **not yet available**. 
+> **Note**: Development setup is **not yet available**.
 > Application code, virtual environments, package manifests (`package.json`, `pyproject.toml`), and local database migrations will be introduced systematically starting in **Phase 2**.
 
 ---

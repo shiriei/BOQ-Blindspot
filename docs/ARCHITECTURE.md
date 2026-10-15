@@ -6,7 +6,7 @@
 
 ## 1. Architectural Style: Modular Monolith
 
-BOQ Blindspot is designed as a **locally hosted, desktop-first modular monolith**. 
+BOQ Blindspot is designed as a **locally hosted, desktop-first modular monolith**.
 
 ### 1.1 Key Rationale
 - **Single Process / Local Host**: Subcontractors run the application on their personal laptop or workstation. A distributed microservice architecture would introduce fragile networking, heavy operational overhead, and excessive resource consumption.
@@ -77,20 +77,20 @@ BOQ Blindspot is designed as a **locally hosted, desktop-first modular monolith*
 
 ```
 1. INGESTION
-   Raw File (PDF, Sheet, Audio, Photo) 
-     ──▶ [documents] calculates SHA-256 
+   Raw File (PDF, Sheet, Audio, Photo)
+     ──▶ [documents] calculates SHA-256
      ──▶ Writes to data/storage/<hash> (Immutable)
      ──▶ Creates Document record in SQLite
 
 2. EXTRACTION
-   Document 
+   Document
      ──▶ [extraction] triggers appropriate parser (PDFPlumber, openpyxl, OCR, or STT)
      ──▶ Generates Raw Extracted Chunks
 
 3. STRUCTURING & MATCHING
-   Raw Extracted Chunks 
+   Raw Extracted Chunks
      ──▶ [ai_runtime] extracts structured ExtractedFact (schema validated)
-     ──▶ [matching] compares fact to BOQItem records 
+     ──▶ [matching] compares fact to BOQItem records
      ──▶ Creates BOQMatch (status: 'candidate', confidence: 0.85)
 
 4. HUMAN VERIFICATION (Optional/Gate)
@@ -107,7 +107,7 @@ BOQ Blindspot is designed as a **locally hosted, desktop-first modular monolith*
      ──▶ Produces candidate Finding records
 
 6. REVIEW & EXPORT
-   Finding records 
+   Finding records
      ──▶ Displayed in [review] UI
      ──▶ User accepts / rejects / defers
      ──▶ ReviewDecision written to audit log

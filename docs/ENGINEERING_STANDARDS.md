@@ -64,7 +64,7 @@ Every functional module must be supported by automated tests before merging.
 - No outbound telemetry, analytics, or automated error reporting to third-party servers.
 
 ### 4.2 Handling Untrusted Uploads & Extracted Text
-- **File Ingestion**: 
+- **File Ingestion**:
   - Validate MIME types and magic bytes, not just file extensions.
   - Store files under their SHA-256 digest in a managed directory isolated from system executable paths.
 - **Spreadsheet Formula Injection**:

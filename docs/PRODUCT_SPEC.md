@@ -19,7 +19,7 @@ BOQ Blindspot unifies contractual data, recorded field work, supporting multimed
 ### 2.1 Target Audience
 - **Primary**: Small-to-medium trade subcontractors (subcontract package values typically between £50k and £2M / $50k to $2.5M).
 - **Representative Trades**: Groundworks, reinforced concrete structures, drylining/ceilings, commercial masonry, mechanical and electrical (MEP), painting/finishing, and structural steel erection.
-- **Key Users**: 
+- **Key Users**:
   - Subcontractor Owner / Managing Director
   - Sole-trader Quantity Surveyor (QS) or Commercial Manager
   - Senior Project Engineer / Site Agent compiling interim billing
