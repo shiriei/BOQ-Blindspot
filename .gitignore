@@ -1,0 +1,131 @@
+# ==============================================================================
+# BOQ Blindspot — Git Ignore Rules
+# ==============================================================================
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+ehthumbs.db
+*.tmp
+*.bak
+
+# IDE and Editor Files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Python and Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node.js and Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+*.local
+
+# Environment & Secrets (Never commit secrets or credentials)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+
+# Local Storage, Databases & Private Project Data
+# Local SQLite databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+data/*.db
+data/*.sqlite3
+
+# Local File Stores (Uploaded customer contracts, evidence, scans, audio)
+data/storage/
+data/evidence/
+data/uploads/
+data/imports/
+data/exports/
+data/backups/
+storage/
+uploads/
+evidence_store/
+
+# Generated Reports & Export Artifacts
+reports/generated/
+exports/
+*.pdf.tmp
+*.xlsx.tmp
+
+# AI / ML Local Runtimes & Model Weights
+# Model weight binaries must never be committed to Git
+models/*.gguf
+models/*.bin
+models/*.safetensors
+models/*.onnx
+models/*.pt
+models/*.pth
+models/checkpoints/
+models/cache/
+.huggingface/
+.cache/huggingface/
+
+# Test Outputs and Temporary Fixtures
+tests/temp/
+tests/output/
+tests/fixtures/scratch/
+scratch/
+tmp/
+temp/
